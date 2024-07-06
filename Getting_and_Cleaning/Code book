@@ -1,0 +1,35 @@
+
+### CodeBook.md
+ A resource for all the variables type that might need more description
+
+```
+# Code Book for Tidy Data Set
+
+## Overview
+This code book describes the variables for  `run_analysis.R` script.
+
+## Transformations and Cleaning
+1. **Merging Training and Test Sets**: The training and test data sets were merged to create one data set.
+2. **Extracting Mean and Standard Deviation Measurements**: Only the measurements on the mean and standard deviation for each measurement were extracted.
+3. **Using Descriptive Activity Names**: Descriptive activity names were used to name the activities in the data set.
+4. **Labeling Data Set with Descriptive Variable Names**: The data set was appropriately labeled with descriptive variable names.
+5. **Creating Tidy Data Set**: A second, independent tidy data set was created with the average of each variable for each activity and each subject.
+
+## Variables
+The tidy data set contains the following variables:
+
+- `SubjectNum`: The ID of the subject.
+- `Activity`: The activity performed by the subject, with the following possible values:
+  - `WALKING`
+  - `WALKING_UPSTAIRS`
+  - `WALKING_DOWNSTAIRS`
+  - `SITTING`
+  - `STANDING`
+  - `LAYING`
+- `tBodyAcc-mean()-X`: Mean of body acceleration in X direction.
+- `tBodyAcc-mean()-Y`: Mean of body acceleration in Y direction.
+- `tBodyAcc-mean()-Z`: Mean of body acceleration in Z direction.
+- `tBodyAcc-std()-X`: Standard deviation of body acceleration in X direction.
+- `tBodyAcc-std()-Y`: Standard deviation of body acceleration in Y direction.
+- `tBodyAcc-std()-Z`: Standard deviation of body acceleration in Z direction.
+```
