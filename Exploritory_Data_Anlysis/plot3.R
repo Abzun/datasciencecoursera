@@ -6,6 +6,7 @@ subset_data <- subset(data, Date >= as.Date("2007-02-01") & Date <= as.Date("200
 # Convert to Date/Time classes
 datetime <- strptime(paste(subset_data$Date, subset_data$Time), format="%Y-%m-%d %H:%M:%S")
 subset_data$DateTime <- datetime
+#---^^^ The same as all the other R script ^^^----
 
 # Plot 3: Energy Sub Metering
 png("plot3.png", width=480, height=480)
